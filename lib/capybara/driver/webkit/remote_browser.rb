@@ -1,6 +1,6 @@
 class Capybara::Driver::Webkit
   class RemoteBrowser < Capybara::Driver::Webkit::Browser
-    attr :remote_host, :remote_port, :socket
+    attr :remote_host, :remote_port
     def initialize(hostname, port, options = { })
       @remote_host = hostname
       @remote_port = port

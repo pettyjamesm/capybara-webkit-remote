@@ -1,16 +1,21 @@
 class Capybara::Driver::Webkit
   class RemoteBrowser < Capybara::Driver::Webkit::Browser
-    attr :remote_host, :remote_port
+    attr :remote_host, :remote_port, :socket
     def initialize(hostname, port, options = { })
       @remote_host = hostname
       @remote_port = port
       super(options)
     end
     
+    def disconnect!; @socket.close; end
+    
     def start_server ; end
     
     def attempt_connect
       @socket = @socket_class.open(remote_host, remote_port)
+      at_exit do
+        self.disconnect!
+      end
       rescue Errno::ECONNREFUSED
     end
   end 

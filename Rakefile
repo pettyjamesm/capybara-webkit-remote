@@ -17,8 +17,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "capybara-webkit-remote"
   gem.homepage = "http://github.com/pettyjamesm/capybara-webkit-remote"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Add support for connecting capybara-webkit to a remote host}
+  gem.description = %Q{capybara-webkit-remote allows the capybara driver to point to a browser that's running in a remote host\
+ using the TCP socket protocol that capybara-webkit already uses.}
   gem.email = "jp@jibe.com"
   gem.authors = ["James Petty"]
   # dependencies defined in Gemfile
@@ -30,14 +31,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test

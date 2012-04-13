@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "capybara-webkit-remote"
   gem.homepage = "http://github.com/pettyjamesm/capybara-webkit-remote"
   gem.license = "MIT"
-  gem.summary = %Q{Add support for connecting capybara-webkit to a remote host}
+  gem.summary = %Q{Adds support for connecting to a capybara-webkit browser on a remote host}
   gem.description = %Q{capybara-webkit-remote allows the capybara driver to point to a browser that's running in a remote host\
  using the TCP socket protocol that capybara-webkit already uses.}
   gem.email = "jp@jibe.com"

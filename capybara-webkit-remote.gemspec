@@ -23,7 +23,9 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "capybara-webkit-remote.gemspec",
     "lib/capybara-webkit-remote.rb",
+    "lib/capybara/driver/webkit/remote_browser.rb",
     "test/helper.rb",
     "test/test_capybara-webkit-remote.rb"
   ]

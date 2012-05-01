@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "capybara-webkit-remote"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Petty"]
-  s.date = "2012-04-13"
+  s.date = "2012-05-01"
   s.description = "capybara-webkit-remote allows the capybara driver to point to a browser that's running in a remote host using the TCP socket protocol that capybara-webkit already uses."
   s.email = "jp@jibe.com"
   s.extra_rdoc_files = [

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "capybara-webkit-remote"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Petty"]
-  s.date = "2012-05-01"
+  s.date = "2012-05-24"
   s.description = "capybara-webkit-remote allows the capybara driver to point to a browser that's running in a remote host using the TCP socket protocol that capybara-webkit already uses."
   s.email = "jp@jibe.com"
   s.extra_rdoc_files = [
@@ -39,20 +39,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<capybara-webkit>, ["~> 0.11.0"])
+      s.add_runtime_dependency(%q<capybara-webkit>, [">= 0.11.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
     else
-      s.add_dependency(%q<capybara-webkit>, ["~> 0.11.0"])
+      s.add_dependency(%q<capybara-webkit>, [">= 0.11.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, [">= 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
     end
   else
-    s.add_dependency(%q<capybara-webkit>, ["~> 0.11.0"])
+    s.add_dependency(%q<capybara-webkit>, [">= 0.11.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, [">= 1.0.0"])
